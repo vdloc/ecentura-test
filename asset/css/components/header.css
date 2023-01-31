@@ -1,0 +1,50 @@
+/* Deal */
+.deal {
+  color: var(--color-dove-gray);
+  font-size: 0.688rem;
+  background: var(--color-cultured-gray);
+}
+
+.deal__content {
+  padding-block: 0.75rem;
+}
+
+/* Main header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 0.875rem;
+}
+
+/* Search bar */
+.top-search {
+  position: relative;
+  display: flex;
+}
+
+.top-search__input {
+  width: 26.5rem;
+  height: 2.8125rem;
+  border: 1px solid var(--color-bright-gray);
+  padding-inline: 1.625rem;
+}
+
+.top-search__input::placeholder {
+  color: var(--color-oslo-gray);
+  font-size: 0.75rem;
+}
+
+.top-search__label {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
+}
+
+/* Account functions */
+.account {
+  display: flex;
+}
