@@ -3,6 +3,43 @@
   text-align: center;
 }
 
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-theme {
+  color: var(--color-theme);
+}
+
+.text-lavender {
+  color: var(--color-lavender);
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-extralight {
+  font-weight: 200;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
+

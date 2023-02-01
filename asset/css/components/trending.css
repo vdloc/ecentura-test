@@ -1,0 +1,64 @@
+/* Trendings */
+.trending {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 16.125rem);
+  gap: 1rem;
+}
+
+.trending__item {
+  padding-inline: 4.25rem;
+  border-radius: 0.625rem;
+  background-repeat: no-repeat;
+}
+
+.trending__item.trending__item--large {
+  grid-row: span 2;
+  background-image: url(/asset/img/trending/usb-flash-drive.png);
+}
+
+.trending__item.trending__item--top {
+  background-image: url(/asset/img/trending/coffee-cups.png);
+}
+
+.trending__item.trending__item--center {
+  background-image: url(/asset/img/trending/perfumes.png);
+}
+
+.trending__item.trending__item--large .trending__item-header {
+  margin-top: 8.5rem;
+}
+
+.trending__item.trending__item--top .trending__item-header {
+  margin-top: 2.125rem;
+}
+
+.trending__item.trending__item--center .trending__item-header {
+  margin-top: 4.375rem;
+}
+
+.trending__item.trending__item--large
+  .trending__item-header
+  .trending__item-title {
+  margin-top: 0.75rem;
+  font-size: 3.125rem;
+}
+
+.trending__item-title {
+  font-size: 1.875rem;
+}
+
+.trending__item-desc {
+  max-width: 40%;
+  margin-top: 1.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  color: var(--color-oslo-gray);
+}
+
+.trending__item-link {
+  display: inline-block;
+  margin-top: 1.75rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--color-black);
+}

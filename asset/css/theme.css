@@ -1,10 +1,14 @@
 body {
   --color-black: #000;
-  --color-main: #ea28a3;
+  --color-theme: #ea28a3;
   --color-bright-gray: #e6e8ea;
   --color-cultured-gray: #f4f4f4;
   --color-dove-gray: #6c6e75;
   --color-oslo-gray: #8b8d92;
   --color-dark-gunmetal: #1f2127;
   --color-dark-silver: #75736c;
+  --color-desert-storm: #f8f8f8;
+  --color-lavender: #9e3b7a;
+  --color-lavender-blush: #fcf2f8;
+  --color-pastel-purple: #b89fae;
 }

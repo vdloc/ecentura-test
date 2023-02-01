@@ -1,0 +1,122 @@
+/* Footer */
+
+.footer {
+  margin-top: 1.625rem;
+  background: var(--color-lavender-blush);
+  color: var(--color-oslo-gray);
+  font-size: 0.75rem;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr 1fr 2fr 1fr 3fr;
+  padding-top: 4.625rem;
+  padding-bottom: 4rem;
+}
+
+.footer__logo-payment {
+  margin-left: -1rem;
+}
+
+.footer__customer-services {
+  grid-column-start: 3;
+}
+
+.footer__information {
+  grid-column-start: 5;
+}
+
+.footer__social-shipping {
+  grid-column-start: 7;
+}
+
+.footer__title {
+  font-size: 0.8125rem;
+}
+
+/* Logo & mail */
+
+.footer__mail {
+  margin-top: 1.25rem;
+}
+
+.footer__mail-link {
+  font-size: 0.875rem;
+}
+
+/* Payment methods */
+
+.payment-methods {
+  position: relative;
+  margin-top: 3rem;
+  border: 1px solid var(--color-oslo-gray);
+}
+
+.payment-methods__title {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: var(--color-lavender-blush);
+  padding-inline: 0.25rem;
+  white-space: nowrap;
+}
+
+.payment-methods__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 2rem 2rem 1rem;
+  column-gap: 1.625rem;
+  row-gap: 1.375rem;
+}
+
+.payment-methods__item {
+  justify-self: center;
+  align-self: center;
+}
+
+/* Navigations */
+
+.footer__nav-list {
+  margin-top: 1.875rem;
+}
+
+.footer__nav-item:not(:last-of-type) {
+  margin-top: 1.25rem;
+}
+
+/* Socials */
+
+.social__list {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.social__item:not(:first-of-type) {
+  margin-left: 1.625rem;
+}
+
+/* Shipping */
+
+.shipping {
+  margin-top: 4rem;
+}
+
+.shipping__list {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.625rem;
+}
+
+/* Copyright */
+
+.copyright {
+  padding-block: 1.875rem;
+  border-top: 1px solid var(--color-bright-gray);
+  line-height: 1.5rem;
+  color: var(--color-pastel-purple);
+}

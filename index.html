@@ -5,534 +5,911 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PinkCube</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./asset/css/main.css" />
   </head>
+
   <body>
     <header class="header">
       <!-- Flash Deals -->
       <section class="deal">
-        <p>50+ Valentine's Day 2019 Food Freebies, Specials and Deals</p>
+        <p class="deal__content text-center font-light">
+          50+ Valentine's Day 2019 Food Freebies, Specials and Deals
+        </p>
       </section>
       <!-- Main header -->
-      <div class="flex">
-        <div class="container">
+      <div class="main-header">
+        <div class="container main-header__content">
           <!-- Logo -->
           <section class="logo">
-            <a href="/"><img src="" alt="Pinkcube" /></a>
+            <a href="/"><img src="./asset/img/logo.png" alt="Pinkcube" /></a>
           </section>
           <!-- Search bar -->
           <section class="top-search">
-            <form action="">
-              <input type="text" id="top-search-input" />
-              <label for="top-search-input"></label>
-            </form>
+            <input
+              type="text"
+              id="top-search-input"
+              class="top-search__input"
+              placeholder="Search here..."
+            />
+            <label
+              for="top-search-input"
+              class="top-search__label cursor-pointer"
+            >
+              <img src="./asset/img/icon/search.png" alt="" />
+            </label>
           </section>
           <!-- Account functions -->
-          <div class="flex">
+          <ul class="account">
             <!-- Login -->
-            <div><img src="" alt="" /><span></span></div>
+            <li class="account__function">
+              <a href="/" class="account__function-link">
+                <img src="./asset/img/icon/user.png" alt="Login" />
+                <span class="account__function-name text-capitalize"
+                  >login</span
+                >
+              </a>
+            </li>
             <!-- Favourites -->
-            <div><img src="" alt="" /><span></span></div>
+            <li class="account__function">
+              <a href="/" class="account__function-link">
+                <img src="./asset/img/icon/favorite.png" alt="Favorites" />
+                <span class="account__function-name text-capitalize"
+                  >favorite</span
+                >
+              </a>
+            </li>
             <!-- Cart -->
-            <div><img src="" alt="" /><span></span></div>
-          </div>
+            <li class="account__function">
+              <a href="/" class="account__function-link">
+                <img src="./asset/img/icon/cart.png" alt="Cart" />
+                <span class="account__function-name text-capitalize">cart</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <!-- Navigation -->
-      <nav>
-        <ul class="flex">
-          <li><a href="">office</a></li>
-          <li><a href="">electronics</a></li>
-          <li><a href="">leisure</a></li>
-          <li><a href="">household</a></li>
-          <li><a href="">giveaways</a></li>
-          <li><a href="">food</a></li>
-          <li><a href="">bags</a></li>
-          <li><a href="">textiles</a></li>
-          <li><a href="">car & travel</a></li>
-          <li><a href="">hygiene</a></li>
-          <li><a href="">express</a></li>
-          <li><a href="">green</a></li>
-          <li><a href="">inspiration</a></li>
+      <nav class="top-navigation container">
+        <ul class="top-navigation__list">
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize">office</a>
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize"
+              >electronics</a
+            >
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize">leisure</a>
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize"
+              >household</a
+            >
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize"
+              >giveaways</a
+            >
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize">food</a>
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize">bags</a>
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize"
+              >textiles</a
+            >
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize"
+              >car & travel</a
+            >
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize">hygiene</a>
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-uppercase">express</a>
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-uppercase">green</a>
+          </li>
+          <li>
+            <a href="/" class="top-navigation__link text-capitalize"
+              >inspiration</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <div class="container">
-        <!-- Jumbotron -->
-        <section class="jumbotron">
-          <header>
-            <h1>The Best Products in <br /><span>Every Category</span></h1>
+        <!-- Banner -->
+        <section class="banner">
+          <header class="banner__header">
+            <h1 class="banner__title text-center">
+              The Best Products in <br /><span class="font-extralight"
+                >Every Category</span
+              >
+            </h1>
           </header>
-          <form>
+          <div class="banner__search">
+            <label
+              for="banner-search-input"
+              class="banner__search-label cursor-pointer"
+            >
+              <img src="/asset/img/icon/search-pink.png" alt=""
+            /></label>
             <input
               type="text"
-              id="jumbotron-search-input"
-              class="jumbotron-search"
+              id="banner-search-input"
+              class="banner__search-input"
+              placeholder="Search your favorite product"
             />
-            <label for="jumbotron-search-input"></label>
-          </form>
+          </div>
         </section>
         <!-- Categories -->
         <section class="categories">
           <header>
-            <h2>Pinkcube <span>Categories</span></h2>
+            <h2 class="categories__title font-semibold">
+              Pinkcube <span class="font-light">Categories</span>
+            </h2>
           </header>
           <!-- Category List -->
-          <ul class="flex">
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Cotton Bags</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Cotton Bags">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/bags.png"
+                    alt="Cotton Bags"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">Cotton Bags</h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Hygiene Products</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Hygiene Products">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/hygiene.png"
+                    alt="Hygiene Products"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">
+                    Hygiene Products
+                  </h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Branded Items</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Branded Items">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/branded.png"
+                    alt="Branded Items"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">Branded Items</h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Coffee Cups</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Coffee Cups">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/cups.png"
+                    alt="Coffee Cups"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">Coffee Cups</h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Giveaways</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Giveaways">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/giveaway.png"
+                    alt="Giveaways"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">Giveaways</h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Cotton Bags</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Pens">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/pens.png"
+                    alt="Pens"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">Pens</h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Pens</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Confectionery">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/confectionery.png"
+                    alt="Confectionery"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">Confectionery</h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Confectionery</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <div class="flex">
-                  <img src="" alt="" />
-                  <div>
-                    <h5>Electronics</h5>
-                    <p>90 products</p>
-                  </div>
-                </div>
+            <li class="categories__item">
+              <a href="/" class="categories__link" title="Electronics">
+                <figure class="categories__figure">
+                  <img
+                    src="/asset/img/category/electronics.png"
+                    alt="Electronics"
+                    class="categories__image"
+                  />
+                </figure>
+                <header class="categories__item-header">
+                  <h5 class="categories__name font-semibold">Electronics</h5>
+                  <p class="categories__stock-count font-light">90 products</p>
+                </header>
               </a>
             </li>
           </ul>
         </section>
         <!-- Trending -->
         <section class="trending">
-          <article>
-            <header>
-              <span>top trending</span>
-              <h2>werbeartikel</h2>
+          <article class="trending__item trending__item--large">
+            <header class="trending__item-header font-semibold">
+              <span class="text-capitalize">top trending</span>
+              <h2 class="trending__item-title text-uppercase">werbeartikel</h2>
             </header>
-            <p>
+            <p class="trending__item-desc">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
               fugiat ducimus alias consequuntur eligendi incidunt voluptatem
-              accusamus enim? Eveniet fugiat quam consectetur pariatur autem,
-              odio ducimus obcaecati maiores optio aliquid?
             </p>
-            <a href="/">jetzt ansehen</a>
+            <a
+              href="/"
+              class="trending__item-link font-semibold text-capitalize text-underline"
+              >jetzt ansehen</a
+            >
           </article>
-          <article>
-            <header>
-              <h2>coffee-to-go <br />becher</h2>
+          <article class="trending__item trending__item--top">
+            <header class="trending__item-header">
+              <h2 class="trending__item-title text-uppercase font-semibold">
+                coffee-to-go <br />becher
+              </h2>
             </header>
-            <a href="/">jetzt ansehen</a>
+            <a
+              href="/"
+              class="trending__item-link font-semibold text-capitalize text-underline"
+              >jetzt ansehen</a
+            >
           </article>
-          <article>
-            <header>
-              <h2>schutzen sie <br />sich jetzt!</h2>
+          <article class="trending__item trending__item--center">
+            <header class="trending__item-header">
+              <h2 class="trending__item-title text-uppercase font-semibold">
+                schutzen sie <br />sich jetzt!
+              </h2>
             </header>
-            <a href="/">jetzt ansehen</a>
+            <a
+              href="/"
+              class="trending__item-link font-semibold text-capitalize text-underline"
+              >jetzt ansehen</a
+            >
           </article>
         </section>
         <!-- Products -->
         <section class="products">
-          <header>
-            <span>the latest</span>
-            <h2>fabulous <span>products</span></h2>
+          <header class="products__header text-center">
+            <span class="text-uppercase text-theme font-semibold"
+              >the latest</span
+            >
+            <h2 class="products__title text-capitalize font-bold">
+              fabulous <span class="font-extralight">products</span>
+            </h2>
           </header>
-          <ul class="flex">
-            <li>
+          <ul class="products__list">
+            <li class="products__item">
               <a href="">
-                <div>
-                  <img src="" alt="" />
-                  <div class="rating"></div>
-                  <h5>Bluetooth speaker</h5>
-                  <p>$66.00</p>
-                </div>
+                <img
+                  src="/asset/img/product/speaker.png"
+                  alt="Bluetooth speaker"
+                  class="products__item-image"
+                />
+              </a>
+              <div class="products__item-rate">
+                <input
+                  type="radio"
+                  id="speaker-star-5"
+                  name="rate"
+                  value="5"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="speaker-star-5"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="speaker-star-4"
+                  name="rate"
+                  value="4"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="speaker-star-4"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="speaker-star-3"
+                  name="rate"
+                  value="3"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="speaker-star-3"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="speaker-star-2"
+                  name="rate"
+                  value="2"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="speaker-star-2"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="speaker-star-1"
+                  name="rate"
+                  value="1"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="speaker-star-1"
+                  class="products__item-rate-label"
+                ></label>
+              </div>
+              <h5 class="products__item-name font-semibold">
+                <a href=""> Bluetooth speaker </a>
+              </h5>
+              <p class="products__item-price text-lavender font-bold">
+                <a href=""> $66.00 </a>
+              </p>
+              <a href="" class="products__item-cart">
+                <img src="/asset/img/icon/cart-white.png" alt="" />
               </a>
             </li>
-            <li>
+            <li class="products__item">
               <a href="">
-                <div>
-                  <img src="" alt="" />
-                  <div class="rating"></div>
-                  <h5>Bluetooth speaker</h5>
-                  <p>$66.00</p>
-                </div>
+                <img
+                  src="/asset/img/product/bottle.png"
+                  alt="Water bottle"
+                  class="products__item-image"
+                />
+              </a>
+              <div class="products__item-rate">
+                <input
+                  type="radio"
+                  id="bottle-star-5"
+                  name="rate"
+                  value="5"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="bottle-star-5"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="bottle-star-4"
+                  name="rate"
+                  value="4"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="bottle-star-4"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="bottle-star-3"
+                  name="rate"
+                  value="3"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="bottle-star-3"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="bottle-star-2"
+                  name="rate"
+                  value="2"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="bottle-star-2"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="bottle-star-1"
+                  name="rate"
+                  value="1"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="bottle-star-1"
+                  class="products__item-rate-label"
+                ></label>
+              </div>
+              <h5 class="products__item-name font-semibold">
+                <a href="">Water bottle </a>
+              </h5>
+              <p class="products__item-price text-lavender font-bold">
+                <a href=""> $66.00 </a>
+              </p>
+              <a href="" class="products__item-cart">
+                <img src="/asset/img/icon/cart-white.png" alt="" />
               </a>
             </li>
-            <li>
+            <li class="products__item">
               <a href="">
-                <div>
-                  <img src="" alt="" />
-                  <div class="rating"></div>
-                  <h5>Bluetooth speaker</h5>
-                  <p>$66.00</p>
-                </div>
+                <img
+                  src="/asset/img/product/bag.png"
+                  alt="Rucksacke"
+                  class="products__item-image"
+                />
               </a>
-            </li>
-          </ul>
-        </section>
-        <!-- Content -->
-        <section class="content">
-          <ul>
-            <li>
-              <h4>Order promotional items online from Pinkcube</h4>
-              <p>
-                We are Pinkcube. We deliver business gifts to you through very
-                user-friendly web shops. We just do it. Every day anew. We know
-                that you don't want to go to too much trouble to order
-                advertising material. So we help you get the items you want with
-                little effort. Every day we work to be better than yesterday.
-                This is Pinkcube. By the way: You can order promotional items in
-                Austria at Pinkcube.at .
+              <div class="products__item-rate">
+                <input
+                  type="radio"
+                  id="rucksacke-star-5"
+                  name="rate"
+                  value="5"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="rucksacke-star-5"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="rucksacke-star-4"
+                  name="rate"
+                  value="4"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="rucksacke-star-4"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="rucksacke-star-3"
+                  name="rate"
+                  value="3"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="rucksacke-star-3"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="rucksacke-star-2"
+                  name="rate"
+                  value="2"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="rucksacke-star-2"
+                  class="products__item-rate-label"
+                ></label>
+                <input
+                  type="radio"
+                  id="rucksacke-star-1"
+                  name="rate"
+                  value="1"
+                  class="products__item-rate-input"
+                />
+                <label
+                  for="rucksacke-star-1"
+                  class="products__item-rate-label"
+                ></label>
+              </div>
+              <h5 class="products__item-name font-semibold">
+                <a href="">Rucksacke </a>
+              </h5>
+              <p class="products__item-price text-lavender font-bold">
+                <a href=""> $66.00 </a>
               </p>
-              <p>
-                We are an Essen company. We stand for reliability, high advisory
-                competence and goal orientation. That is why we have been doing
-                exactly one thing since our foundation in 2008: We accompany our
-                customers as a permanent contact and are motivated to fulfill
-                even the most extraordinary promotional products order in the
-                shortest possible time. The range of products on offer in the
-                advertising market is now more extensive than ever. That is why
-                the loyalty to our customers is very important to us, only in
-                this way can we offer the optimal advertising material. A way in
-                which we have been successfully marketing advertising material
-                for years, especially in the Netherlands, Belgium and Germany.
-              </p>
-            </li>
-            <li>
-              <h4>The highest quality, quickly and easily</h4>
-              <p>
-                We offer you a very high level of user friendliness on our web
-                shops. For example, we made a pre-selection of the best products
-                and product categories. So you can always easily find a suitable
-                product for your budget and advertising goal. You will receive a
-                clear offer within 1 minute, and in the meantime we will prepare
-                a draft free of charge and without obligation. That's how easy
-                it can be!
-              </p>
-            </li>
-            <li>
-              <h4>Simply have advertising material printed</h4>
-              <p>
-                Our customer service will be happy to advise you on your choice
-                of promotional products. Pens, lanyards and lip balm sticks are
-                among our most popular items. However, we also offer a variety
-                of other advertising media. Our range also includes printed
-                sunglasses and power banks with a logo . You can also print
-                sports bottles in all possible colors and designs at Pinkcube.
-                The aim is always to achieve a particularly effective
-                advertising effect for your company. At the same time, you can
-                make your customers happy by giving them a promotional gift. You
-                can also say “thank you” and give something back to your most
-                loyal customers.
-              </p>
-              <p>
-                powerbanks-printing-144px599afdfff2ddfWith your logo on a
-                printed gym bag or a drinking bottle, your company will always
-                be reminded of what can have a positive effect on you in the
-                future. At the same time, you can promote the customer's trust
-                in your company with high-quality promotional items.
-              </p>
-            </li>
-            <li>
-              <h4>Online price calculation and fast delivery times</h4>
-              <p>
-                Our promotional products company accompanies you throughout the
-                entire process of your promotional product project. A personal
-                contact is available to you, from advice on the selection of
-                articles to ordering and delivery of the printed cotton bags or
-                jute bags. The prices that are displayed to you after
-                configuring the items also include all printing, shipping and
-                other ancillary costs. So you can be sure that your offer does
-                not contain any hidden costs.
-              </p>
-              <p>
-                Short delivery times are also possible thanks to our innovative
-                ordering system. A deadline for an event or an event? No
-                problem! Together with you, we can select and configure the
-                advertising material so that you are guaranteed to receive the
-                printed promotional items on time.
-              </p>
-            </li>
-            <li>
-              <h4>Pinkcube - order promotional items online</h4>
-              <p>
-                Pinkcube is your supplier for promotional items, also known as
-                give-aways, with unique and clear pricing. A correct, suitable
-                and clear offer will be sent to your e-mail within a very short
-                time. And: We guarantee a very high quality of our products.
-              </p>
-              <p>
-                Pinkcube Promotional Items is your specialist for the top 40
-                groups of promotional items. We only sell advertising material
-                and freebies to companies, institutions and associations. We
-                provide you with a selection from the huge range of promotional
-                items. Whether you want the promotional gifts to be printed,
-                embroidered, engraved or just like that, with us you can
-                calculate your advertising material online. As a company,
-                association or institution, we offer you giveaways, throwing
-                goods, giveaways or high-quality promotional gifts for every
-                occasion. Our goal is to meet your needs.
-              </p>
+              <a href="" class="products__item-cart">
+                <img src="/asset/img/icon/cart-white.png" alt="" />
+              </a>
             </li>
           </ul>
         </section>
       </div>
+      <!-- Content -->
+      <section class="content">
+        <ul class="container">
+          <li class="content__segment">
+            <h4 class="content__segment-heading font-semibold">
+              Order promotional items online from Pinkcube
+            </h4>
+            <p class="content__segment-paragraph font-light">
+              We are Pinkcube. We deliver business gifts to you through very
+              user-friendly web shops. We just do it. Every day anew. We know
+              that you don't want to go to too much trouble to order advertising
+              material. So we help you get the items you want with little
+              effort. Every day we work to be better than yesterday. This is
+              Pinkcube. By the way: You can order promotional items in Austria
+              at Pinkcube.at .
+            </p>
+            <p class="content__segment-paragraph font-light">
+              We are an Essen company. We stand for reliability, high advisory
+              competence and goal orientation. That is why we have been doing
+              exactly one thing since our foundation in 2008: We accompany our
+              customers as a permanent contact and are motivated to fulfill even
+              the most extraordinary promotional products order in the shortest
+              possible time. The range of products on offer in the advertising
+              market is now more extensive than ever. That is why the loyalty to
+              our customers is very important to us, only in this way can we
+              offer the optimal advertising material. A way in which we have
+              been successfully marketing advertising material for years,
+              especially in the Netherlands, Belgium and Germany.
+            </p>
+          </li>
+          <li class="content__item">
+            <h4 class="content__segment-heading font-semibold">
+              The highest quality, quickly and easily
+            </h4>
+            <p class="content__segment-paragraph font-light">
+              We offer you a very high level of user friendliness on our web
+              shops. For example, we made a pre-selection of the best products
+              and product categories. So you can always easily find a suitable
+              product for your budget and advertising goal. You will receive a
+              clear offer within 1 minute, and in the meantime we will prepare a
+              draft free of charge and without obligation. That's how easy it
+              can be!
+            </p>
+          </li>
+          <li class="content__item">
+            <h4 class="content__segment-heading font-semibold">
+              Simply have advertising material printed
+            </h4>
+            <p class="content__segment-paragraph font-light">
+              Our customer service will be happy to advise you on your choice of
+              promotional products. Pens, lanyards and lip balm sticks are among
+              our most popular items. However, we also offer a variety of other
+              advertising media. Our range also includes printed sunglasses and
+              power banks with a logo . You can also print sports bottles in all
+              possible colors and designs at Pinkcube. The aim is always to
+              achieve a particularly effective advertising effect for your
+              company. At the same time, you can make your customers happy by
+              giving them a promotional gift. You can also say “thank you” and
+              give something back to your most loyal customers.
+            </p>
+            <p class="content__segment-paragraph font-light">
+              powerbanks-printing-144px599afdfff2ddfWith your logo on a printed
+              gym bag or a drinking bottle, your company will always be reminded
+              of what can have a positive effect on you in the future. At the
+              same time, you can promote the customer's trust in your company
+              with high-quality promotional items.
+            </p>
+          </li>
+          <li class="content__item">
+            <h4 class="content__segment-heading font-semibold">
+              Online price calculation and fast delivery times
+            </h4>
+            <p class="content__segment-paragraph font-light">
+              Our promotional products company accompanies you throughout the
+              entire process of your promotional product project. A personal
+              contact is available to you, from advice on the selection of
+              articles to ordering and delivery of the printed cotton bags or
+              jute bags. The prices that are displayed to you after configuring
+              the items also include all printing, shipping and other ancillary
+              costs. So you can be sure that your offer does not contain any
+              hidden costs.
+            </p>
+            <p class="content__segment-paragraph font-light">
+              Short delivery times are also possible thanks to our innovative
+              ordering system. A deadline for an event or an event? No problem!
+              Together with you, we can select and configure the advertising
+              material so that you are guaranteed to receive the printed
+              promotional items on time.
+            </p>
+          </li>
+          <li class="content__item">
+            <h4 class="content__segment-heading font-semibold">
+              Pinkcube - order promotional items online
+            </h4>
+            <p class="content__segment-paragraph font-light">
+              Pinkcube is your supplier for promotional items, also known as
+              give-aways, with unique and clear pricing. A correct, suitable and
+              clear offer will be sent to your e-mail within a very short time.
+              And: We guarantee a very high quality of our products.
+            </p>
+            <p class="content__segment-paragraph font-light">
+              Pinkcube Promotional Items is your specialist for the top 40
+              groups of promotional items. We only sell advertising material and
+              freebies to companies, institutions and associations. We provide
+              you with a selection from the huge range of promotional items.
+              Whether you want the promotional gifts to be printed, embroidered,
+              engraved or just like that, with us you can calculate your
+              advertising material online. As a company, association or
+              institution, we offer you giveaways, throwing goods, giveaways or
+              high-quality promotional gifts for every occasion. Our goal is to
+              meet your needs.
+            </p>
+          </li>
+        </ul>
+      </section>
       <!-- Achievements -->
-      <section class="flex">
-        <ul class="flex">
-          <li>
-            <img src="" alt="" />
-            <h5>15 years of experience</h5>
-            <p>
+      <section class="achievement">
+        <ul class="achievement__list">
+          <li class="achievement__item">
+            <img
+              src="/asset/img/achivement/head.png"
+              alt="15 Years Of Experience"
+            />
+            <h5 class="achievement__item-title text-uppercase font-semibold">
+              15 years of experience
+            </h5>
+            <p class="achievement__item-desc text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-              vel rerum
             </p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <h5>30,000 satisfied customers</h5>
-            <p>
+          <li class="achievement__item">
+            <img
+              src="/asset/img/achivement/user.png"
+              alt="30,000 Satisfied Customers"
+            />
+            <h5 class="achievement__item-title text-uppercase font-semibold">
+              30,000 satisfied customers
+            </h5>
+            <p class="achievement__item-desc text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-              vel rerum
             </p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <h5>express service</h5>
-            <p>
+          <li class="achievement__item">
+            <img src="/asset/img/achivement/time.png" alt="Express Service" />
+            <h5 class="achievement__item-title text-uppercase font-semibold">
+              express service
+            </h5>
+            <p class="achievement__item-desc text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-              vel rerum
             </p>
           </li>
-          <li>
-            <img src="" alt="" />
-            <h5>fast delivery</h5>
-            <p>
+          <li class="achievement__item">
+            <img src="/asset/img/achivement/envelope.png" alt="Fast Delivery" />
+            <h5 class="achievement__item-title text-uppercase font-semibold">
+              fast delivery
+            </h5>
+            <p class="achievement__item-desc text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-              vel rerum
             </p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Footer -->
-    <footer>
-      <div class="flex">
+    <footer class="footer">
+      <div class="footer__content container">
         <!-- Logo & Payment -->
-        <div>
+        <div class="footer__logo-payment">
           <!-- Logo -->
           <section class="logo">
-            <div>
-              <a href="/">
-                <img src="" alt="Pinkcube" />
-              </a>
-            </div>
+            <a href="/">
+              <img src="/asset/img/logo.png" alt="Pinkcube" />
+            </a>
+            <p class="footer__mail">
+              Support and advice at
+              <a
+                href="mailto:service@pinkcube.de"
+                class="footer__mail-link font-medium text-theme"
+                >service@pinkcube.de</a
+              >
+            </p>
           </section>
           <!-- Payment -->
-          <section class="payment">
-            <h3>our payment methods</h3>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+          <section class="payment-methods">
+            <h3 class="payment-methods__title text-uppercase">
+              our payment methods
+            </h3>
+            <ul class="payment-methods__list">
+              <li class="payment-methods__item">
+                <a href="/"
+                  ><img
+                    src="/asset/img/payment/american-express.png"
+                    alt="American Express"
+                /></a>
               </li>
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="payment-methods__item">
+                <a href="/"
+                  ><img
+                    src="/asset/img/payment/mastercard.png"
+                    alt="Mastercard"
+                /></a>
               </li>
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="payment-methods__item">
+                <a href="/"
+                  ><img src="/asset/img/payment/paypal.png" alt="Paypal"
+                /></a>
               </li>
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="payment-methods__item">
+                <a href="/"
+                  ><img src="/asset/img/payment/visa.png" alt="Visa" />
+                </a>
               </li>
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="payment-methods__item">
+                <a href="/"
+                  ><img src="/asset/img/payment/vorkasse.png" alt="Vorkasse"
+                /></a>
               </li>
             </ul>
           </section>
         </div>
         <!-- Customer services -->
-        <section class="customer-services">
+        <nav class="footer__nav footer__customer-services">
           <header>
-            <h3>customer service</h3>
-            <ul class="flex">
-              <li><a href="">Blog</a></li>
-            </ul>
-            <ul class="flex">
-              <li><a href="">Frequently asked questions</a></li>
-            </ul>
-            <ul class="flex">
-              <li><a href="">Promotional iteam from A to Z</a></li>
-            </ul>
-            <ul class="flex">
-              <li><a href="">Download the advertising material catalog</a></li>
-            </ul>
-            <ul class="flex">
-              <li><a href="">Shipping & withdrawal</a></li>
-            </ul>
-            <ul class="flex">
-              <li><a href="">Conditions</a></li>
-            </ul>
+            <h3 class="footer__title text-uppercase text-theme font-semibold">
+              customer service
+            </h3>
           </header>
-        </section>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="/">Blog</a></li>
+            <li class="footer__nav-item">
+              <a href="/">Frequently asked questions</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/">Promotional iteam from A to Z</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/">Download the advertising material catalog</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/">Shipping & withdrawal</a>
+            </li>
+            <li class="footer__nav-item"><a href="/">Conditions</a></li>
+          </ul>
+        </nav>
         <!-- Information -->
-        <section class="information">
+        <nav class="footer__nav footer__information">
           <header>
-            <h3>information</h3>
-            <ul class="flex">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
+            <h3 class="footer__title text-uppercase text-theme font-semibold">
+              information
+            </h3>
           </header>
-        </section>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="/">Imprint</a></li>
+            <li class="footer__nav-item">
+              <a href="/">Legal advance information</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/">About us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/">Data protection</a>
+            </li>
+          </ul>
+        </nav>
         <!-- Communities & Shipping -->
-        <div>
+        <div class="footer__social-shipping">
           <!-- Communities -->
-          <section class="communities">
+          <section class="social">
             <header>
-              <h3>our communities</h3>
+              <h3 class="footer__title text-uppercase text-theme font-semibold">
+                our communities
+              </h3>
             </header>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="/" title="Facebook"
+                  ><img src="/asset/img/social/facebook.png" alt="Facebook"
+                /></a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="social__item">
+                <a href="/" title="Google"
+                  ><img
+                    src="/asset/img/social/google-plus.png"
+                    alt="Google Plus"
+                  />
+                </a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="social__item">
+                <a href="/" title="Youtube"
+                  ><img src="/asset/img/social/youtube.png" alt="Youtube"
+                /></a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="social__item">
+                <a href="/" title="Twitter"
+                  ><img src="/asset/img/social/twitter.png" alt="Twitter"
+                /></a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="social__item">
+                <a href="/" title="Pinterest"
+                  ><img src="/asset/img/social/pinterest.png" alt="Pinterest"
+                /></a>
               </li>
             </ul>
           </section>
           <!-- Shipping -->
           <section class="shipping">
             <header>
-              <h3>we ship with</h3>
+              <h3 class="footer__title text-uppercase text-theme font-semibold">
+                we ship with
+              </h3>
             </header>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+            <ul class="shipping__list">
+              <li class="shipping__item">
+                <a href="/" title="Duesche Post"
+                  ><img
+                    src="/asset/img/shipping/duesche-post.png"
+                    alt="DUESCHE POST"
+                /></a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="shipping__item">
+                <a href="/" title="Dhl"
+                  ><img src="/asset/img/shipping/DHL.png" alt="DHL"
+                /></a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="shipping__item">
+                <a href="/" title="Dpd"
+                  ><img src="/asset/img/shipping/dpd.png" alt="DPD"
+                /></a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="shipping__item">
+                <a href="/" title="Fedex"
+                  ><img src="/asset/img/shipping/FedEx.png" alt="FEDEX"
+                /></a>
               </li>
-            </ul>
-            <ul class="flex">
-              <li>
-                <a href=""><img src="" alt="" /></a>
+              <li class="shipping__item">
+                <a href="/" title="Ups"
+                  ><img src="/asset/img/shipping/UPS.png" alt="UPS"
+                /></a>
               </li>
             </ul>
           </section>
         </div>
       </div>
       <!-- Copyright -->
-      <p class="copyright">
+      <p class="copyright text-center">
         © 2021 Copyright Pinkcube GmbH - We deliver promotional items,
         promotional items, giveaways, giveaways and giveaways printed with your
         logo. <br />

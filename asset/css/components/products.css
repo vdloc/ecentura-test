@@ -1,0 +1,102 @@
+/*  */
+.products {
+  padding-top: 5.875rem;
+  padding-bottom: 6.125rem;
+}
+
+.products__title {
+  font-size: 2.75rem;
+}
+
+.products__list {
+  height: 29.125rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2.875rem;
+  padding-inline: 5.875rem;
+}
+
+.products__item {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  background: var(--color-desert-storm);
+  border-radius: 0.625rem;
+}
+
+.products__item-image {
+  height: 14.375rem;
+}
+
+.products__item-name {
+  margin-top: 1.5rem;
+}
+
+.products__item-price {
+  margin-top: 1rem;
+}
+
+.products__item-cart {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding-right: 2px;
+  border-radius: 50%;
+  background: var(--color-lavender);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Rating */
+
+.products__item-rate {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.products__item-rate-label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* hide input */
+.products__item-rate-input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.products__item-rate-label {
+  background-image: url(/asset/img/icon/star-rating-active.png);
+}
+
+/* grey out remaining stars at cursor position */
+.products__item-rate:hover
+  .products__item-rate-label:hover
+  ~ .products__item-rate-label {
+  background-image: url(/asset/img/icon/star-rating.png);
+}
+
+/* Off hover */
+.products__item-rate:not(:hover)
+  .products__item-rate-input:checked
+  + .products__item-rate-label
+  ~ .products__item-rate-label {
+  background-image: url(/asset/img/icon/star-rating.png);
+}
+
+/* grey out all stars if all inputs are unchecked */
+.products__item-rate:not(:has(.products__item-rate-input:checked))
+  .products__item-rate-label {
+  background-image: url(/asset/img/icon/star-rating.png);
+}

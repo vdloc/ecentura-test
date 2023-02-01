@@ -1,0 +1,22 @@
+/* Content */
+
+.content {
+  padding-top: 6.75rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid var(--color-bright-gray);
+}
+
+.content__segment:not(:first-of-type) {
+  margin-top: 0.875rem;
+}
+
+.content__segment-heading {
+  font-size: 1.5625rem;
+}
+
+.content__segment-paragraph {
+  font-size: 0.875rem;
+  line-height: 2.5rem;
+  color: var(--color-oslo-gray);
+  margin-block: 2.25rem;
+}
