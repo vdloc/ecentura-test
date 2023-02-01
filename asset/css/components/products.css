@@ -103,7 +103,9 @@
 }
 
 /* grey out all stars if all inputs are unchecked */
-.products__item-rate:not(:has(.products__item-rate-input:checked))
+.products__item-rate:not(:hover).products__item-rate:not(
+    :has(.products__item-rate-input:checked)
+  )
   .products__item-rate-label {
   background-image: url(/asset/img/icon/star-rating.png);
 }
