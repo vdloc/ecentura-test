@@ -1,12 +1,20 @@
 /* Deal */
 .deal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   color: var(--color-dove-gray);
   font-size: 0.688rem;
+  word-spacing: 3px;
   background: var(--color-cultured-gray);
 }
 
 .deal__content {
-  padding-block: 0.75rem;
+  height: var(--height-hot-deal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Main header */
@@ -14,17 +22,23 @@
   border-bottom: 1px solid var(--color-bright-gray);
 }
 
+.main-header__logo {
+  padding-bottom: 0.5rem;
+}
+
 .main-header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 0.875rem;
+  height: calc(var(--height-header) + var(--height-hot-deal));
+  padding-top: var(--height-hot-deal);
 }
 
 /* Search bar */
 .top-search {
   position: relative;
   display: flex;
+  padding-left: 1.5rem;
 }
 
 .top-search__input {
@@ -49,21 +63,19 @@
 /* Account functions */
 .account {
   display: flex;
-  height: 100%;
 }
 
-.account__function:not(:last-of-type) {
-  margin-right: 2.25rem;
-  height: 100%;
+.account__function:not(:last-child) {
+  margin-right: 3rem;
 }
 
 .account__function-link {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: 0.375rem;
+  height: 100%;
 }
 
 .account__function-name {
@@ -75,7 +87,7 @@
 .top-navigation__list {
   display: flex;
   justify-content: space-between;
-  padding-block: 1.25rem;
+  padding-block: 1.125rem;
 }
 
 .top-navigation__link {

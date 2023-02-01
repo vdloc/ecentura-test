@@ -11,4 +11,7 @@ body {
   --color-lavender: #9e3b7a;
   --color-lavender-blush: #fcf2f8;
   --color-pastel-purple: #b89fae;
+  --height-hot-deal: 2.25rem;
+  --height-header: 4.25rem;
+  --height-category-item: 102px;
 }

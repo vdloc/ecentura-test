@@ -1,7 +1,7 @@
 /* Footer */
 
 .footer {
-  margin-top: 1.625rem;
+  margin-top: 1.75rem;
   background: var(--color-lavender-blush);
   color: var(--color-oslo-gray);
   font-size: 0.75rem;
@@ -10,7 +10,7 @@
 .footer__content {
   display: grid;
   grid-template-columns: 3fr 1fr 3fr 1fr 2fr 1fr 3fr;
-  padding-top: 4.625rem;
+  padding-top: 5rem;
   padding-bottom: 4rem;
 }
 
@@ -20,18 +20,23 @@
 
 .footer__customer-services {
   grid-column-start: 3;
+  padding-left: 0.5rem;
 }
 
 .footer__information {
   grid-column-start: 5;
+  margin-left: -0.75rem;
 }
 
 .footer__social-shipping {
   grid-column-start: 7;
+  margin-left: -0.25rem;
 }
 
 .footer__title {
   font-size: 0.8125rem;
+  padding-top: 1rem;
+  letter-spacing: 2px;
 }
 
 /* Logo & mail */
@@ -66,24 +71,25 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 2rem 2rem 1rem;
-  column-gap: 1.625rem;
+  padding: 2rem 1rem 1rem;
+  /* column-gap: 8px; */
   row-gap: 1.375rem;
 }
 
 .payment-methods__item {
   justify-self: center;
   align-self: center;
+  padding-right: 1rem;
 }
 
 /* Navigations */
 
 .footer__nav-list {
-  margin-top: 1.875rem;
+  margin-top: 1.5rem;
 }
 
-.footer__nav-item:not(:last-of-type) {
-  margin-top: 1.25rem;
+.footer__nav-item:not(:first-child) {
+  margin-top: 0.875rem;
 }
 
 /* Socials */
@@ -94,14 +100,14 @@
   margin-top: 2rem;
 }
 
-.social__item:not(:first-of-type) {
-  margin-left: 1.625rem;
+.social__item:not(:first-child) {
+  margin-left: 2rem;
 }
 
 /* Shipping */
 
 .shipping {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .shipping__list {

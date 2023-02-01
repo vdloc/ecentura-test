@@ -1,32 +1,40 @@
 /* Achivements */
 
 .achievement__list {
+  height: 200px;
   display: flex;
-  align-items: center;
   justify-content: center;
   border-block: 1px solid var(--color-bright-gray);
 }
 
 .achievement__item {
   max-width: 18.75rem;
-  padding: 1.5rem 1.875rem 2rem;
+  padding-inline: 1.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 2rem;
 }
 
 .achievement__item:not(:last-of-type) {
   border-right: 1px solid var(--color-bright-gray);
 }
 
+.achievement__item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .achievement__item-title {
-  margin-top: 1.25rem;
-  font-size: 14px;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
 }
 
 .achievement__item-desc {
-  margin-top: 1rem;
+  margin-bottom: 1.875rem;
   font-size: 13px;
   line-height: 1.5rem;
   color: var(--color-oslo-gray);

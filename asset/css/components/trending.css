@@ -7,13 +7,14 @@
 }
 
 .trending__item {
-  padding-inline: 4.25rem;
+  padding-inline: 1.875rem;
   border-radius: 0.625rem;
   background-repeat: no-repeat;
 }
 
 .trending__item.trending__item--large {
   grid-row: span 2;
+  padding-inline: 4.25rem;
   background-image: url(/asset/img/trending/usb-flash-drive.png);
 }
 
@@ -30,17 +31,19 @@
 }
 
 .trending__item.trending__item--top .trending__item-header {
-  margin-top: 2.125rem;
+  margin-top: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .trending__item.trending__item--center .trending__item-header {
-  margin-top: 4.375rem;
+  margin-top: 4.5rem;
+  line-height: 2.25rem;
 }
 
 .trending__item.trending__item--large
   .trending__item-header
   .trending__item-title {
-  margin-top: 0.75rem;
+  margin-top: 0.25rem;
   font-size: 3.125rem;
 }
 
@@ -50,7 +53,7 @@
 
 .trending__item-desc {
   max-width: 40%;
-  margin-top: 1.75rem;
+  margin-top: 0.5rem;
   font-size: 0.8125rem;
   line-height: 1.375rem;
   color: var(--color-oslo-gray);
@@ -58,7 +61,6 @@
 
 .trending__item-link {
   display: inline-block;
-  margin-top: 1.75rem;
-  padding-bottom: 2px;
+  margin-top: 1.5625rem;
   border-bottom: 1px solid var(--color-black);
 }

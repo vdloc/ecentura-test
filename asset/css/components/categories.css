@@ -2,8 +2,8 @@
 
 .categories {
   padding-inline: 4.75rem;
-  margin-top: 5.875rem;
-  margin-bottom: 6.25rem;
+  margin-top: 5.625rem;
+  margin-bottom: 6.375rem;
 }
 
 .categories__title {
@@ -11,10 +11,10 @@
 }
 
 .categories__list {
-  margin-top: 0.625rem;
+  margin-top: 1.125rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, var(--height-category-item));
   gap: 1rem;
 }
 
@@ -29,9 +29,8 @@
 }
 
 .categories__link {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   display: flex;
-  align-items: center;
 }
 
 .categories__figure {
@@ -42,10 +41,11 @@
 }
 
 .categories__name {
+  margin-top: 1rem;
   font-size: 1rem;
 }
 
 .categories__stock-count {
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   font-size: 0.8125rem;
 }
