@@ -13,17 +13,16 @@
 }
 
 .products__list {
-  height: 29.125rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2.375rem;
   padding-inline: 5.875rem;
 }
 
 .products__item {
+  height: var(--height-product-item);
   position: relative;
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -108,4 +107,18 @@
   )
   .products__item-rate-label {
   background-image: url(/asset/img/icon/star-rating.png);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 992px) {
+  .products__list {
+    padding-inline: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .products__list {
+    grid-template-columns: unset;
+  }
 }

@@ -126,3 +126,77 @@
   line-height: 1.5rem;
   color: var(--color-pastel-purple);
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    padding-inline: 1rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer__logo-payment {
+    margin-left: unset;
+    order: 0;
+  }
+
+  .footer__customer-services {
+    grid-column-start: unset;
+    padding-left: unset;
+    order: 2;
+  }
+
+  .footer__information {
+    grid-column-start: unset;
+    margin-left: unset;
+    order: 3;
+  }
+
+  .footer__social-shipping {
+    grid-column-start: unset;
+    margin-left: unset;
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .payment-methods {
+    border: none;
+  }
+
+  .social__item:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  .shipping {
+    margin-top: 1.5rem;
+  }
+
+  .shipping__list {
+    margin-top: 1.5rem;
+  }
+
+  .footer__title {
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .footer__content {
+    grid-template-columns: unset;
+  }
+
+  .footer__social-shipping {
+    order: 4;
+  }
+
+  .shipping {
+    margin-top: 2.5rem;
+  }
+}

@@ -1,4 +1,5 @@
 body {
+  /* Colors */
   --color-black: #000;
   --color-theme: #ea28a3;
   --color-bright-gray: #e6e8ea;
@@ -11,7 +12,19 @@ body {
   --color-lavender: #9e3b7a;
   --color-lavender-blush: #fcf2f8;
   --color-pastel-purple: #b89fae;
+
+  /* Heights */
   --height-hot-deal: 2.25rem;
   --height-header: 4.25rem;
-  --height-category-item: 102px;
+  --height-category-item: 6.375rem;
+  --height-top-search: 2.8125rem;
+  --height-banner: 28.5rem;
+  --height-banner-search: 3.125rem;
+  --height-trending-item: 16.125rem;
+  --height-mobile-trending-large-item: 24rem;
+  --height-product-item: 29.125rem;
+  --height-achivement-item: 12.5rem;
+
+  /* Mobile */
+  --mobile-padding: 2rem;
 }

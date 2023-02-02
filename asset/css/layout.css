@@ -1,6 +1,6 @@
 /* Layout */
 .container {
-  width: 81.125rem;
+  max-width: 1298px;
   margin: 0 auto;
 }
 
@@ -14,4 +14,37 @@
 
 .justify-center {
   justify-content: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1298px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding-inline: var(--mobile-padding);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
